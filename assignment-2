@@ -1,0 +1,18 @@
+ogr2ogr -f MySQL MySQL:test,user=thackbarth,password=og1cee1E world_borders.shp -nln borders -update -overwrite -lco GEOMETRY_NAME=SHAPE
+
+
+####table structure
+
+CREATE TABLE IF NOT EXISTS `world_borders` 
+(
+  `CountryID` int(11) NOT NULL AUTO_INCREMENT,
+  `SHAPE` geometry NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `area` decimal(7,0) DEFAULT NULL,
+  `population` decimal(10,0) DEFAULT NULL,
+  'region' decimal(3,0),
+  `lon` double(8,3) DEFAULT NULL,
+  'lat' double(8,3) DEFAULT NULL,
+  UNIQUE KEY `CountryID` (`CountryID`),
+  SPATIAL KEY `SHAPE` (`SHAPE`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=607 ;
