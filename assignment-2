@@ -1,4 +1,4 @@
-ogr2ogr -f MySQL MySQL:test,user=thackbarth,password=og1cee1E world_borders.shp -nln borders -update -overwrite -lco GEOMETRY_NAME=SHAPE
+ogr2ogr -f MySQL MySQL:cs2.mwsu.edu/phpMyAdmin,host=localhost,user=thackbarth,password=og1cee1E TM_world_borders.shp -nln world_borders -update -overwrite -lco GEOMETRY_NAME=SHAPE
 
 
 ####table structure
