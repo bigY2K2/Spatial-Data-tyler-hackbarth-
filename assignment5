@@ -1,0 +1,61 @@
+##Assignment 5 - GIS File Types (and other stuff)
+ 
+1. shp - a popular geospatial file extension. it uses vector implementaion to describe points
+and polygons
+ 
+2. osm- a collaborative project that provides a free database for a map of the world. Became
+popular with the help of cheap gps location devices and millions of users uploading data
+ 
+3. geojson- collection of simple geographic attributes that uses java script object notation
+features include points, lines and polygons
+ 
+4. gpx-a gps data format for software. its free of charge and its primary use is
+to describe waypoints, tracks and routes. Its tags contain location elevation and time.
+ 
+5. kml- an xml notation that expresses geographic data and provides a visualization
+in an internet based 2-dimensional maps
+ 
+6. nmea-  communication for marine electronics containing data related to gyrocompass
+sonars, gps and anemometer along with several more.
+ 
+7. csv- stands for comma seperated values. stores data in a plain text file
+ 
+8. wkt- stands for well known text. a markup language that represents vector geometry on maps.
+#### Software
+ 
+1. ArcGis- a geographic system used for working with maps and geographic information. it is used for compiling geographical data, analyzing mapped information, sharing and discovering geographic information.
+ 
+2. Qgis- a cross platform, free open source desktop geographic information system ( hence the gis) allows viewing editing and analyzing geographic data
+ 
+3. GpsBabel- free software to transfer routes tracks and waypoint data to and from clients GPD units, and convert betweeen several differnt types of gps data
+ 
+4. Gdal- a library for reading/ writing geospatial data formats.
+ 
+ #### Definitions
+ 
+
+1. Point-a point is an exact reference to a location on a plane or in  space.
+ 
+2. Curve - a set of points that are connected by a line. however the closer the points are the more detailed the curviture
+ 
+3. LineString- a curve which once 2 points have been added to it can never be less than 2 point slong
+ 
+4. MultiCurve- 
+
+5. MultiLineStrings-a geometry with multiple openlayers. Also an object that consists of 1 to n linestrings
+ 
+6. Surface Polygons- basic form of representaion. usually used to represent 3d objects on a screen. Easily manipulated and provide fast rendering times
+ 
+7. MultiPolygons- an object that contains multiple polygons. Usually represented in WKT
+ 
+#### Relationships
+ 
+1. Touches -used to access a files and modify its timestamp. can also creat a new emptyfile
+ 
+2. Crosses - this is in relation to data that is crossing a closed polygon from one end to another
+ 
+3. Within- this is a set of data tha lies inside or within a polygon
+
+4. Overlaps - this occurs when two or more polygons overlap each other
+
+ 
